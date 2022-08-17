@@ -3,15 +3,17 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>PeerChat</title>
+    <title>Apul's Peerchat</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='lobby.css'>
 </head>
 <body>
-    
+
     <main id="lobby-container">
         <div id="form-container">
             <div id="form__container__header">
+                <p>Welcome to Apul's Peerchat</p>
+                <br />
                 <p>👋 Create OR Join a Room</p>
             </div>
 
@@ -34,7 +36,7 @@
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         let inviteCode = e.target.invite_link.value
-        window.location = `index.html?room=${inviteCode}` 
+        window.location = `index.html?room=${inviteCode}`
     })
 </script>
 
